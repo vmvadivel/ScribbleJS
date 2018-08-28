@@ -3,9 +3,26 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title></title>
+    <link rel="stylesheet" href="calc-style.css">
+    <title>Calculator Powered by Javascript!</title>
 </head>
 <body>
-
+    <div class="container">
+        <div class="calculator">
+            <div class="calculator__display">0</div>
+            <div class="calculator__keys">
+                <button>7</button><button>8</button><button>9</button>
+                <button class="MathOperator" data-action="divide">÷</button>
+                <button>4</button><button>5</button><button>6</button>
+                <button class="MathOperator" data-action="multiply">&times;</button>
+                <button>1</button><button>2</button><button>3</button>
+                <button class="MathOperator" data-action="subtract">-</button>
+                <button data-action="decimal">.</button><button>0</button><button data-action="clear">AC</button>
+                <button class="MathOperator" data-action="add">+</button>
+                <button class="MathEqual" data-action="calculate">=</button>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="calc-functions.js"></script>
 </body>
 </html>
